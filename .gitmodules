@@ -1,0 +1,3 @@
+[submodule "chromeinjector"]
+	path = chromeinjector
+	url = git@github.com:isaiahsarju/chromeinjector.git

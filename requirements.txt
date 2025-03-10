@@ -1,0 +1,8 @@
+asyncio~=3.4.3
+virtualenv~=20.8.0
+websockets~=10.0
+coloredlogs~=15.0.1
+cmd2~=2.4.0
+pyreadline3~=3.4.1; platform_system == "Windows"
+gnureadline~=8.1.2; platform_system == "Darwin"
+gnureadline~=8.1.2; platform_system == "Linux"

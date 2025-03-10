@@ -1,0 +1,8 @@
+async function enumInputs(){
+    inputFields = document.querySelectorAll('$inputs');
+    inputs = new Array(inputFields.length).fill(null);
+    inputFields.forEach(function(inputItem, inputIndex, inputErr){
+            inputs[inputIndex]=''+inputItem.id+':'+inputItem.value;
+    });
+    return inputs;
+};
