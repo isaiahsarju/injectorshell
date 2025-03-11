@@ -14,3 +14,7 @@ python3 -m pip install -r chromeinjector/requirements.txt
 
 ## Run
 `python3 ./injectorshell.py`
+
+## Greetz
+- Thank you to FX Teammates for feedback and feature requests
+- Thank you [ACN Security](https://www.accenture.com/us-en/services/cybersecurity) for allowing me to work on this project over the years
