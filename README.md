@@ -5,6 +5,7 @@ InjectorShell is a cmd2 command line application which instruments [ChromeInject
 
 ## Installation
 ```bash
+git clone --recursive https://github.com/isaiahsarju/injectorshell.git
 python3 -m venv [env]
 source [env]/bin/activate
 python3 -m pip install -r requirements.txt
