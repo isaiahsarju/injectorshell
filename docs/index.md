@@ -14,5 +14,5 @@ Welcome to the official documentation for **Injector Shell**. This site is desig
 
 ## Need Help?
 
-If encounter issues... open an [issue](https://github.com/isaiahsarju/injectorshell/issues) or for questions hit me up at injector-shell.dwindle466 \[at\] passmail \[dot\] com.
+If you encounter issues... open an [issue](https://github.com/isaiahsarju/injectorshell/issues). For questions hit me up at injector-shell.dwindle466 \[at\] passmail \[dot\] com.
 
