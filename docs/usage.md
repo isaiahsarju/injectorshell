@@ -1,4 +1,18 @@
 # Starting
+## Target
+To inject in a chromium browser via CDP you need... A chromium based browser running with CDP enabled!
+
+The simplest way is to run it locally. CDP runs on 9222 by default or you can customize the debugging port. If you do, don't forget to set a custom CDP port when creating your `ChromeInjector` within Injector Shell!
+```cmd
+"C:\Program Files\Google\Chrome\Application\chrome.exe" \
+--disable-gpu --remote-debugging-port=[remote_debug_port] \
+--user-data-dir="C:\Users\[target_user]\AppData\Local\Google\Chrome\User Data" \
+--restore-last-session
+```
+### Remote CDP targets
+You can use SSH local port forwarding, other C2 port redirection, or a proxy host. `ChromeInjector` and Injector Shell support proxies/alternate target host names.
+
+## Injector Shell
 ```text
 > python3 ./injectorshell.py -h
 Usage: injectorshell.py [options]
