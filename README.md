@@ -3,7 +3,7 @@
 ## Intro
 InjectorShell is a cmd2 command line application which instruments [ChromeInjector](https://github.com/isaiahsarju/chromeinjector). It makes interacting with CDP, via ChromeInjector, simple to do.
 
-*This tool is desined soley for education purposes and authorized testing of information systems, blah, blah, blah*
+*This tool is designed soley for education purposes and authorized testing of information systems, blah, blah, blah*
 
 See [docs](docs/) for extensive documentation.
 
