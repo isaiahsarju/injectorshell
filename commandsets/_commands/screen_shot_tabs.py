@@ -75,7 +75,13 @@ def screen_shot_tabs(self, ns: argparse.Namespace):
             else:
                 file_name = time + '-' + alpha_only + '.png'
             file_path = ns.path + file_name
-            png = base64.b64decode(data)
+            if len(file_path) > 256:
+                # 10 is for size of '-truncated'
+                self._cmd.pwarning(f"Original path: '{file_path}'")
+                len_to_remove = (len(file_path) - 256) + 10
+                file_path = HelperClass.truncate_filename(file_path, len_to_remove, '-truncated')
+                self._cmd.pwarning(f"New path: '{file_path}'")
+            img_out = base64.b64decode(data)
             if not ns.silent:
                 self._cmd.poutput(f"Writing screenshot for {url}:\n\t'{file_path}'")
-            HelperClass.write_out(file_path, png, False, binary_mode=True)
+            HelperClass.write_out(file_path, img_out, False, binary_mode=True)

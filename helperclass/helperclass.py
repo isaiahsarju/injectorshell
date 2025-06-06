@@ -196,6 +196,23 @@ class HelperClass:
         return cls.enforce_case
 
     @classmethod
+    def truncate_filename(cls, filename: str,
+                          chars_to_remove: int,
+                          append: str = ""):
+        """
+        Returns new file name with -truncated
+
+        Keyword arguments:
+        filename -- filename to be truncated
+        chars_to_remove -- total chars to remove before extension
+        append -- what to append (default: "")
+        """
+        base_name, extension = os.path.splitext(filename)
+        truncated_base = base_name[:-chars_to_remove]
+        new_filename = truncated_base + append + extension
+        return new_filename
+
+    @classmethod
     def standard_validations(cls,
                             regex_or_ws_url_required: bool = False,
                             regex = False,
